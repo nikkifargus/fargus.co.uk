@@ -4,7 +4,7 @@ import deeFargus from '../images/dee_fargus.png'
 const Test1 = () => (
   <div className="row">
     <div className="col-12 col-lg-6">
-      <div style={{ }}>
+      <div >
         <img style={{marginBottom: 0}} alt="logo" src={peterFargus}/>
       </div>
       <p style={{ color: '#565347', textAlign: 'center'}}>
@@ -13,7 +13,7 @@ const Test1 = () => (
       </p>
     </div>
   <div className="col-12 col-lg-6">
-    <div style={{}}>
+  <div >
       <img style={{ marginBottom: 0 }} alt="logo" src={deeFargus}/>
     </div>
 

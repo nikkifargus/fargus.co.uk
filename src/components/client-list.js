@@ -18,10 +18,10 @@ const Test2 = () => (
         justifyContent: 'center',
       }}
     >
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={fsa}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={lch}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={myTravel}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={stockport}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={fsa}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={lch}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={myTravel}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={stockport}/></div>
     </div>
     <div
       style={{
@@ -30,10 +30,10 @@ const Test2 = () => (
         justifyContent: 'center',
       }}
     >
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={NHS}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={pwc}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={NPS}/></div>
-      <div className="col-3"><img style={{width: '100%'}} alt="logo" src={ukSport}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={NHS}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={pwc}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={NPS}/></div>
+      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={ukSport}/></div>
     </div>
   </div>
 );

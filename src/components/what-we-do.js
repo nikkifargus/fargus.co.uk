@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import React from 'react';
 import OpinionSurveys from '../images/OpinionSurveys.png'
 import LMSkills from '../images/LMSkills.png'
@@ -9,7 +8,7 @@ const Index = () => (
     We can help you in the following ways.<br/>
     Please select the service that you are most interested in for more information:
   </p>
-  <a href="/client-list/">
+  <a href="/employee-surveys/">
     <div className="row">
       <div className="col-3">
         <img alt="" src={OpinionSurveys} style={{ width: '100%' }}/>
@@ -19,7 +18,7 @@ const Index = () => (
       </div>
     </div>
     </a>
-    <a href="/client-list/">
+    <a href="/leadership-skills/">
     <div className="row">
       <div className="col-3">
         <img alt="" src={LMSkills} style={{ width: '100%' }}/>
@@ -29,7 +28,7 @@ const Index = () => (
       </div>
     </div>
     </a>
-    <a href="/client-list/">
+    <a href="/our-people/">
     <div className="row">
       <div className="col-3">
         <img alt="" src={logo} style={{ width: '100%' }}/>
