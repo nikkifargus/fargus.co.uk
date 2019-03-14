@@ -1,7 +1,7 @@
 import React from 'react';
 import OpinionSurveys from '../images/OpinionSurveys.png'
 import LMSkills from '../images/LMSkills.png'
-import logo from '../images/logo.png'
+import logo from '../images/OPR_Logo.png'
 const Index = () => (
   <div className="col-12">
   <p>
