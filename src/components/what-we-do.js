@@ -24,7 +24,7 @@ const Index = () => (
         <img alt="" src={LMSkills} style={{ width: '100%' }}/>
       </div>
       <div className="col-9">
-        <p>We develop management and leadership skills. </p>
+        <p></p>
       </div>
     </div>
     </a>

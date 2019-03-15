@@ -5,16 +5,6 @@ import logo from '../images/OPR_Logo.png'
 
 const Index = () => (
     <div className="col-12">
-    <h4>
-  <Link
-    to="/what-we-do/"
-    style={{
-      color: `#565347`,
-    }}
-  >
-  BACK
-  </Link>
-</h4>
 <div>
 <h4 style={{
   color: `#565347`,

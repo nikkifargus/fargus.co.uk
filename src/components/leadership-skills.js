@@ -4,16 +4,7 @@ import leadership from '../images/leadership.jpeg'
 
 const Index = () => (
     <div className="col-12">
-    <h4>
-    <Link
-      to="/what-we-do/"
-      style={{
-        color: `#565347`,
-      }}
-    >
-    BACK
-    </Link>
-  </h4>
+    <h4>We develop management and leadership skills using the following structure:</h4>
     <div style={{
       display: 'flex',
       flexDirection: 'row',
