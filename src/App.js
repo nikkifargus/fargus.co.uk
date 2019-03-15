@@ -30,9 +30,15 @@ function AppRouter() {
           <li class="nav-item">
             <a class="nav-link" href="/about-us/">About Us</a>
           </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/what-we-do/">What We Do</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/leadership-skills/">Leadership Skills</a>
+              <a class="dropdown-item" href="/our-people/">Employee Surveys</a>
+              <a class="dropdown-item" href="/employee-surveys/">Assess the Quality of Human Capital</a>
+            </div>
           </li>
             <li class="nav-item">
               <a class="nav-link" href="/client-list/">Client List <span class="sr-only">(current)</span></a>
