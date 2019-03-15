@@ -17,23 +17,29 @@ function AppRouter() {
   return (
     <Router>
       <div>
-        <div className="navbar">
-          <ul>
-            <li style={{float: 'left'}}>
-              <a href="/">
-                <h4>FCP</h4>
-              </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">FCP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/about-us/">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/what-we-do/">What We Do</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/client-list/">Client List <span class="sr-only">(current)</span></a>
             </li>
-            <li><a href="/client-list/"><h4>Client List</h4></a></li>
-            <li><a href="/what-we-do/"><h4>What We Do</h4></a></li>
-            <li><a href="/about-us/"><h4>About Us</h4></a></li>
+
+
           </ul>
         </div>
+      </nav>
+
         <div
-          style={{
-            marginTop:100,
-            marginBottom:30,
-          }}
           className="col-10 offset-1"
         >
           <Route path="/" exact component={index} />
@@ -44,13 +50,23 @@ function AppRouter() {
           <Route path="/our-people/" component={ourPeople} />
           <Route path="/employee-surveys/" component={employeeSurveys} />
         </div>
-        <div class="footer">
-          <p style={{fontSize: 15, marginBottom: 0, textAlign: 'center', color: `#565347`}}> Our standards are based on those specified by the <a href="https://www.cipd.co.uk/">Chartered Institute of Personnel & Development</a>, the <a href="http://www.bps.org.uk/">British Psychological Society</a>, and the <a href="http://www.ibconsulting.org.uk/">Institute of Business Consulting</a>.</p>
-          <p style={{fontSize: 17, textAlign: 'center', color: `#565347`}}>peter@fargus.co.uk | 01423 566035 | dee@fargus.co.uk</p>
-        </div>
       </div>
     </Router>
   );
 }
 
 export default AppRouter;
+
+//
+// <div className="navbar">
+//   <ul>
+//     <li style={{float: 'left'}}>
+//       <a href="/">
+//         <h4>FCP</h4>
+//       </a>
+//     </li>
+//     <li><a href="/client-list/"><h4>Client List</h4></a></li>
+//     <li><a href="/what-we-do/"><h4>What We Do</h4></a></li>
+//     <li><a href="/about-us/"><h4>About Us</h4></a></li>
+//   </ul>
+// </div>
