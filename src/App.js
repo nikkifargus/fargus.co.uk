@@ -12,21 +12,25 @@ import clientList from './components/client-list';
 import leadershipSkills from './components/leadership-skills';
 import ourPeople from './components/our-people';
 import employeeSurveys from './components/employee-surveys';
-
+import logo from './images/fcp.png'
 function AppRouter() {
   return (
     <Router>
       <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">FCP</a>
+        <a class="navbar-brand" href="/"><img alt=""src={logo} style={{ maxWidth: 40}}/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/about-us/">About Us</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="/what-we-do/">What We Do</a>
           </li>
