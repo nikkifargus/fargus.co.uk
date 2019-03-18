@@ -12,7 +12,7 @@ import clientList from './components/client-list';
 import leadershipSkills from './components/leadership-skills';
 import ourPeople from './components/our-people';
 import employeeSurveys from './components/employee-surveys';
-import logo from './images/fcp.png'
+import logo from './images/FCPLogoGrey.jpeg'
 function AppRouter() {
   return (
     <Router>
@@ -43,15 +43,12 @@ function AppRouter() {
             <li class="nav-item">
               <a class="nav-link" href="/client-list/">Client List <span class="sr-only">(current)</span></a>
             </li>
-
-
           </ul>
         </div>
       </nav>
 
         <div
           className="p-4"
-          // style={{backgroundColor: 'red'}}
         >
           <Route path="/" exact component={index} />
           <Route path="/client-list/" component={clientList} />
@@ -61,7 +58,7 @@ function AppRouter() {
           <Route path="/our-people/" component={ourPeople} />
           <Route path="/employee-surveys/" component={employeeSurveys} />
         </div>
-        <footer style={{bottom:0}}>
+        <footer style={{bottom:0, padding: 2}}>
           <hr />
           <div style={{marginBottom: 0, textAlign: 'center', color: `#565347`}}> Our standards are based on those specified by the <a href="https://www.cipd.co.uk/">Chartered Institute of Personnel & Development</a>, the <a href="http://www.bps.org.uk/">British Psychological Society</a>, and the <a href="http://www.ibconsulting.org.uk/">Institute of Business Consulting</a>.</div>
           <div style={{textAlign: 'center', color: `#565347`}}>peter@fargus.co.uk | 01423 566035 | dee@fargus.co.uk</div>
