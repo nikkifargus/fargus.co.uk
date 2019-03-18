@@ -10,30 +10,18 @@ import stockport from "../images/stockport.jpg"
 import ukSport from "../images/ukSport.jpg"
 
 const Test2 = () => (
-  <div className="col-12">
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-      }}
-    >
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={fsa}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={lch}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={myTravel}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={stockport}/></div>
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={fsa}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={lch}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={myTravel}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={stockport}/></div>
     </div>
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-      }}
-    >
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={NHS}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={pwc}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={NPS}/></div>
-      <div className="col-3 p-5"><img style={{width: '100%'}} alt="logo" src={ukSport}/></div>
+    <div className="row align-items-center">
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={NHS}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={pwc}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={NPS}/></div>
+      <div className="col-lg-3 col-sm-12 p-3"><img style={{width: '100%'}} alt="logo" src={ukSport}/></div>
     </div>
   </div>
 );

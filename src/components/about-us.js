@@ -3,18 +3,18 @@ import peterFargus from '../images/peter_fargus.png'
 import deeFargus from '../images/dee_fargus.png'
 const Test1 = () => (
   <div className="row">
-    <div className="col-12 col-lg-6">
+    <div className="col-sm-12 col-lg-5 offset-lg-1 mt-4">
       <div >
-        <img style={{marginBottom: 0}} alt="logo" src={peterFargus}/>
+        <img style={{width:"100%"}} alt="logo" src={peterFargus}/>
       </div>
       <p style={{ color: '#565347', textAlign: 'center'}}>
       Peter is a Business Psychologist and Human Resources Consultant. Previously he has worked for British Airways and PA Management Consultants.
       He is a Fellow of the Chartered Institute of Personnel and Development; a Fellow of the Institute of Consulting, a Fellow of the Higher Education Academy and an Associate Fellow of the British Psychological Society. To view Peter&#39;s LinkedIn <a href="https://www.linkedin.com/in/pfargus/">Click here</a>
       </p>
     </div>
-  <div className="col-12 col-lg-6">
+  <div className="col-sm-12 col-lg-5 mt-4">
   <div >
-      <img style={{ marginBottom: 0 }} alt="logo" src={deeFargus}/>
+      <img style={{width:"100%" }} alt="logo" src={deeFargus}/>
     </div>
 
     <p style={{color: '#565347', textAlign: 'center'}}>

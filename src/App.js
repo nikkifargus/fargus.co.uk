@@ -18,7 +18,7 @@ function AppRouter() {
     <Router>
       <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img alt=""src={logo} style={{ maxWidth: 40}}/></a>
+        <a class="navbar-brand" href="/"><img alt=""src={logo} style={{ maxWidth: 70}}/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,8 +36,8 @@ function AppRouter() {
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/leadership-skills/">Leadership Skills</a>
-              <a class="dropdown-item" href="/our-people/">Employee Surveys</a>
-              <a class="dropdown-item" href="/employee-surveys/">Assess the Quality of Human Capital</a>
+              <a class="dropdown-item" href="/employee-surveys/">Employee Surveys</a>
+              <a class="dropdown-item" href="/our-people/">Assess the Quality of Human Capital</a>
             </div>
           </li>
             <li class="nav-item">
@@ -50,7 +50,8 @@ function AppRouter() {
       </nav>
 
         <div
-          className="col-10 offset-1"
+          className="p-4"
+          // style={{backgroundColor: 'red'}}
         >
           <Route path="/" exact component={index} />
           <Route path="/client-list/" component={clientList} />
@@ -60,23 +61,14 @@ function AppRouter() {
           <Route path="/our-people/" component={ourPeople} />
           <Route path="/employee-surveys/" component={employeeSurveys} />
         </div>
+        <footer style={{bottom:0}}>
+          <hr />
+          <div style={{marginBottom: 0, textAlign: 'center', color: `#565347`}}> Our standards are based on those specified by the <a href="https://www.cipd.co.uk/">Chartered Institute of Personnel & Development</a>, the <a href="http://www.bps.org.uk/">British Psychological Society</a>, and the <a href="http://www.ibconsulting.org.uk/">Institute of Business Consulting</a>.</div>
+          <div style={{textAlign: 'center', color: `#565347`}}>peter@fargus.co.uk | 01423 566035 | dee@fargus.co.uk</div>
+        </footer>
       </div>
     </Router>
   );
 }
 
 export default AppRouter;
-
-//
-// <div className="navbar">
-//   <ul>
-//     <li style={{float: 'left'}}>
-//       <a href="/">
-//         <h4>FCP</h4>
-//       </a>
-//     </li>
-//     <li><a href="/client-list/"><h4>Client List</h4></a></li>
-//     <li><a href="/what-we-do/"><h4>What We Do</h4></a></li>
-//     <li><a href="/about-us/"><h4>About Us</h4></a></li>
-//   </ul>
-// </div>
