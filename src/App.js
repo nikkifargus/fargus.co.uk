@@ -2,6 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
+  Link,
 } from "react-router-dom";
 import './App.scss';
 
@@ -18,30 +19,30 @@ function AppRouter() {
     <Router>
       <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img alt=""src={logo} style={{ maxWidth: 100}}/></a>
+        <Link class="navbar-brand" to="/"><img alt=""src={logo} style={{ maxWidth: 100}}/></Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <Link class="nav-link" to="/">Home</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about-us/">About Us</a>
+            <Link class="nav-link" to="/about-us/">About Us</Link>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               What We Do
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/leadership-skills/">Leadership Skills</a>
-              <a class="dropdown-item" href="/employee-surveys/">Employee Surveys</a>
-              <a class="dropdown-item" href="/our-people/">Assess the Quality of Human Capital</a>
+              <Link class="dropdown-item" to="/leadership-skills/">Leadership Skills</Link>
+              <Link class="dropdown-item" to="/employee-surveys/">Employee Surveys</Link>
+              <Link class="dropdown-item" to="/our-people/">Assess the Quality of Human Capital</Link>
             </div>
           </li>
             <li class="nav-item">
-              <a class="nav-link" href="/client-list/">Client List <span class="sr-only">(current)</span></a>
+              <Link class="nav-link" to="/client-list/">Client List <span class="sr-only">(current)</span></Link>
             </li>
           </ul>
         </div>
